@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="LexAnalysis"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/haven/Library/Mobile Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/haven/Library/Mobile Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/haven/Library/Mobile Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LexAnalysis">
+				<Option output="/Users/haven/Library/Mobile Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/LexAnalysis" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/haven/Library/Mobile Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/9.3.0/lib/gcc/9/gcc/x86_64-apple-darwin19/9.3.0/../../../../../../include/c++/9.3.0"/>
+					<Add directory="/usr/local/Cellar/gcc/9.3.0/lib/gcc/9/gcc/x86_64-apple-darwin19/9.3.0/../../../../../../include/c++/9.3.0/x86_64-apple-darwin19"/>
+					<Add directory="/usr/local/Cellar/gcc/9.3.0/lib/gcc/9/gcc/x86_64-apple-darwin19/9.3.0/../../../../../../include/c++/9.3.0/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/9.3.0/lib/gcc/9/gcc/x86_64-apple-darwin19/9.3.0/include"/>
+					<Add directory="/usr/local/Cellar/gcc/9.3.0/lib/gcc/9/gcc/x86_64-apple-darwin19/9.3.0/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 LexAnalysis"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LexAnalysis/fast">
+				<Option output="/Users/haven/Library/Mobile Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/LexAnalysis" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/haven/Library/Mobile Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/Cellar/gcc/9.3.0/lib/gcc/9/gcc/x86_64-apple-darwin19/9.3.0/../../../../../../include/c++/9.3.0"/>
+					<Add directory="/usr/local/Cellar/gcc/9.3.0/lib/gcc/9/gcc/x86_64-apple-darwin19/9.3.0/../../../../../../include/c++/9.3.0/x86_64-apple-darwin19"/>
+					<Add directory="/usr/local/Cellar/gcc/9.3.0/lib/gcc/9/gcc/x86_64-apple-darwin19/9.3.0/../../../../../../include/c++/9.3.0/backward"/>
+					<Add directory="/usr/local/Cellar/gcc/9.3.0/lib/gcc/9/gcc/x86_64-apple-darwin19/9.3.0/include"/>
+					<Add directory="/usr/local/Cellar/gcc/9.3.0/lib/gcc/9/gcc/x86_64-apple-darwin19/9.3.0/include-fixed"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 LexAnalysis/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/haven/Library/Mobile\ Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/haven/Library/Mobile Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/LexAnalysis.h">
+			<Option target="LexAnalysis"/>
+		</Unit>
+		<Unit filename="/Users/haven/Library/Mobile Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/main.cpp">
+			<Option target="LexAnalysis"/>
+		</Unit>
+		<Unit filename="/Users/haven/Library/Mobile Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LexAnalysis/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
