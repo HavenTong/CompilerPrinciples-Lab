@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/haven/Library/Mobile Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LR/LRparser.h
+cstdio
+-
+cstring
+-
+iostream
+-
+map
+-
+string
+-
+fstream
+-
+sstream
+-
+vector
+-
+map
+-
+utility
+-
+set
+-
+
+/Users/haven/Library/Mobile Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LR/main.cpp
+LRparser.h
+/Users/haven/Library/Mobile Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/LR/LRparser.h
+

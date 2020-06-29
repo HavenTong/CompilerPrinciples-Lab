@@ -13,12 +13,13 @@ using namespace std;
 struct Node {
     string token;
     int level;
-    Node() {
-
-    }
+    Node() {}
     Node(string token, int level): token(token), level(level) {}
 };
+
+// 最终语法分析树
 vector<Node> tree;
+
 vector<Node> stack;
 vector<string> errorInfo;
 string nonTerminals[14] = {"program", "stmt", "compoundstmt", "stmts", "ifstmt", "whilestmt", "assgstmt",
@@ -26,11 +27,16 @@ string nonTerminals[14] = {"program", "stmt", "compoundstmt", "stmts", "ifstmt",
                            "multexprprime", "simpleexpr"};
 string terminals[22] = {"{", "}", "(", ")", "i", "t", "e", "w", ";", "<", ">", "<=", ">=", "==", "+",
                         "-", "*", "/", "I", "N", "=", "$"};
+
 map<string, int> nonTerminalMap;
 map<string, int> terminalMap;
 string analysisTable[14][22];
+
+// 输入符号当前的指针
 int cur;
+// 输入buffer
 string buffer;
+
 int lineNumber;
 
 
@@ -87,16 +93,11 @@ void moveNext(string& prog) {
     cur++;
     while (cur < prog.size() && (prog[cur] == ' ' || prog[cur] == '\t' || prog[cur] == '\n')) {
         if (prog[cur] == '\n') {
+            // 记录行号
             lineNumber++;
         }
         cur++;
     }
-//    if (prog[cur] == '=' && prog[cur + 1] == '=') {
-//        cur++;
-//        buffer = "==";
-//    } else if (prog[cur]) {
-//        buffer = string(1, prog[cur]);
-//    }
     if ((prog[cur] == '=' || prog[cur] == '>' || prog[cur] == '<') && (prog[cur + 1] == '=')) {
         buffer = string(1, prog[cur]);
         buffer += prog[cur + 1];
@@ -106,6 +107,7 @@ void moveNext(string& prog) {
     }
 }
 
+// panic
 void error(Node& lastToken, bool isTerminal) {
     if (isTerminal) {
         string info = "语法错误,第" + to_string(lineNumber) + "行,缺少" + "\"" + lastToken.token + "\"";
@@ -127,10 +129,6 @@ void error(Node& lastToken, bool isTerminal) {
             stack.pop_back();
         }
     }
-//    string info = "语法错误,第" + to_string(lineNumber) + "行,缺少" + lastToken.token;
-//    errorInfo.push_back(info);
-//    stack.push_back(Node(buffer, lastToken.level));
-//    tree.push_back(lastToken);
 }
 
 int getRow(string& nonTerminal) {
@@ -220,16 +218,11 @@ void pushStack(Node& top, int row, int col) {
             } else if (col == 10) {
                 stack.push_back(Node(">", level));
             } else if (col == 11) {
-//                stack.push_back(Node("=", level));
-//                stack.push_back(Node("<", level));
                 stack.push_back(Node("<=", level));
             } else if (col == 12) {
-//                stack.push_back(Node("=", level));
-//                stack.push_back(Node(">", level));
                 stack.push_back(Node(">=", level));
             } else {
                 stack.push_back(Node("==", level));
-//                stack.push_back(Node("=", level));
             }
             break;
         case 9:
@@ -315,12 +308,6 @@ void LL(string& prog) {
                 tree.push_back(Node("NUM", top.level));
                 cnt = 0;
             } else if (top.token == "=") {
-//                Node lastNode = tree.back();
-//                if (lastNode.token == "<" || lastNode.token == ">") {
-//                    lastNode.token += '=';
-//                } else {
-//                    tree.push_back(Node("=", top.level));
-//                }
                 tree.push_back(Node("=", top.level));
             } else if (top.token == "{" || top.token == "}" || top.token == "(" || top.token == ")"
             || top.token == ";" || top.token == "<" || top.token == ">" || top.token == "+" || top.token == "-"
@@ -336,7 +323,6 @@ void LL(string& prog) {
             int row = getRow(top.token);
             int col = getCol(buffer);
             if (row == -1 || col == -1 || analysisTable[row][col].empty()) {
-//                printf("error: row: %d col: %d line: %d token: %s buffer: %s\n", row, col, lineNumber, top.token.c_str(), buffer.c_str());
                 error(top, false);
             } else {
                 pushStack(top, row, col);
@@ -354,8 +340,11 @@ void Analysis()
     /* 骚年们 请开始你们的表演 */
     /********* Begin *********/
     prog += '$';
+
     init();
     LL(prog);
+
+    // 输出
     for (int i = 0; i < errorInfo.size(); i++) {
         printf("%s\n", errorInfo[i].c_str());
     }
