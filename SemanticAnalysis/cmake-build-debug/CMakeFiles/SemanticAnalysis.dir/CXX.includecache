@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/haven/Library/Mobile Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/SemanticAnalysis/TranslationSchema.h
+cstdio
+-
+cstring
+-
+iostream
+-
+map
+-
+string
+-
+fstream
+-
+sstream
+-
+vector
+-
+
+/Users/haven/Library/Mobile Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/SemanticAnalysis/main.cpp
+TranslationSchema.h
+/Users/haven/Library/Mobile Documents/com~apple~CloudDocs/Study/junior2/CompilePrinciple/CompilerPrinciples-Lab/SemanticAnalysis/TranslationSchema.h
+

@@ -334,7 +334,6 @@ void LL(string& prog) {
 
 void Analysis()
 {
-
     string prog;
     read_prog(prog);
     /* 骚年们 请开始你们的表演 */
